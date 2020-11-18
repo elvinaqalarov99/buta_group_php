@@ -20,7 +20,7 @@ include_once "header.php";
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay=".5s" style='
-                    background: url("images/4.png");height: 50vh; background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;' data-bgimage="url(images/4.png)">
+                    background: url("images/misc/4.png");height: 50vh; background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;' data-bgimage="url(images/misc/4.png)">
                     </div> 
                     <div class="clearfix"></div> 
                 </div>
