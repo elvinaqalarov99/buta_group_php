@@ -6,44 +6,44 @@
                 <div class="widget">
                     <a href="index.php"><img style="width: 210px" alt="" class="logo" src="images/logo.png" /></a>
                     <div class="spacer-20"></div>
-                    <p><strong>Buta Grup Medİa İnformasiya Texnalogiyaları A.Ş. tam miqyaslı İT qrupudur.</strong> Yaradıcı komanda,müştərilərinin A’dan Z’ye tüm ehtiyaclarına xidmət edir. Bir şirkət firması korporativ şəxsiyyət, sosial media, veb dizayn / proqram təminatı, elektron ticarət, qrafik dizayn, marka qorunması, rəqəmsal marketinq kimi sahələrdə işləyir.</p>
+                    <p><?php echo $lang['footer_buta'] ?></p>
                 </div>
             </div>
 
             <div class="col-lg-2">
                 <div class="widget">
-                    <h5>Səhifələr</h5>
+                    <h5><?php echo $lang['footer_pages'] ?></h5>
                     <ul>
-                        <li><a href="about-us.php">Bizim haqqımızda</a></li>
-                        <li><a href="services.php">Biz nə edirik</a></li>
-                        <li><a href="works.php">Etdiklərimiz</a></li>
-                        <li><a href="contact-us.php">Əlaqə</a></li>
-                        <li><a href="news.php">Xəbərlər</a></li>
+                        <li><a href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['footer_about'] ?></a></li>
+                        <li><a href="<?php echo 'services.php?lang='.$_SESSION['lang'];?>"><?php echo mb_substr($lang['services'],0,-1,'UTF-8') ?></a></li>
+                        <li><a href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['footer_done'] ?></a></li>
+                        <li><a href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo mb_convert_case($lang['connection'], MB_CASE_TITLE, "UTF-8"); ?></a></li>
+                        <li><a href="<?php echo 'news.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['news'] ?></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="widget">
-                    <h5>Bülleten</h5>
+                    <h5><?php echo $lang['newsletter']; ?></h5>
 
-                    <p>Gələnlər qutunuzda ən son xəbərləri, yeniləmələri və xüsusi təklifləri almaq üçün bülletenimizə üzv olun.</p>
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"].'#form_subscribe'); ?>" class="row" id="form_subscribe" method="post" name="form_subscribe">
+                    <p><?php echo $lang['subscribe'] ?></p>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"].'#form_subscribe'.'?lang='.$_SESSION['lang']); ?>" class="row" id="form_subscribe" method="post" name="form_subscribe">
                         <div class="col text-center">
-                            <input class="form-control" id="name_1" name="name_1" placeholder="e-mailinizi daxil edin" type="text" /> <a href="#" onclick="this.closest('form').submit();return false;" id="btn-submit"><i class="arrow_right"></i></a>
+                            <input class="form-control" id="name_1" name="name_1" placeholder="<?php echo $lang['email'] ?>" type="text" /> <a href="#" onclick="this.closest('form').submit();return false;" id="btn-submit"><i class="arrow_right"></i></a>
                             <?php echo $message;  ?>
                             <div class="clearfix"></div>
                         </div>
                     </form>
                     <div class="spacer-10"></div>
-                    <small>Elektron poçtunuz bizimlə təhlükəsizdir. Biz spam göndərmirik</small>
+                    <small><?php echo $lang['email_secure'] ?></small>
                 </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6 sm-text-center mb-sm-30">
-                <div class="mt10">&copy; 2020 - Buta Group. Bütün hüquqlar qorunur.</div>
+                <div class="mt10">&copy; 2020 - Buta Group. <?php echo $lang['rights'] ?></div>
             </div>
 
             <div class="col-md-6 text-md-right text-sm-left">

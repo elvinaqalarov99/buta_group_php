@@ -16,7 +16,7 @@ include_once "header.php";
                 <div class="row align-items-center" style="background-color: cover">
                     <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".5s" style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                         <div class="text-left">
-                            <h1>Bəzi işlərimiz...</h1>
+                            <h1><?php echo $lang['works_header'] ?></h1>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay=".5s" style='
@@ -46,8 +46,9 @@ include_once "header.php";
                                                 <div class="wow fadeInUp animated"  data-wow-delay=".7s" style="background-size: cover; visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;" >
                                                     <h4>Özgün İnşaat</h4>
                                                     <p>
-                                                        Özgün İnşaat'ın web sitesini oluşturduk. Şirket hakkında daha fazla bilgi için aşağıdaki bağlantıyı takip edin.<br/>
-                                                        <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="http://www.ozguninsaat.com/" target="_blank">Incele</a>
+                                                        <?php echo $lang['w1'] ?><br/>
+                                                        <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="http://www.ozguninsaat.com/" target="_blank"><?php echo
+                                                        $lang['browse'] ?></a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -67,13 +68,13 @@ include_once "header.php";
                                             <div class="wow fadeInUp animated"  data-wow-delay=".9s" style="background-size: cover; visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;" >
                                                 <h4>Bayburt Group</h4>
                                                 <p>
-                                                    Bayburt Group'ın web sitesini oluşturduk. Şirket hakkında daha fazla bilgi için aşağıdaki bağlantıyı takip edin.<br/>
-                                                    <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="http://bayburtgrup.com.tr/" target="_blank">Incele</a>
+                                                    <?php echo $lang['w2'] ?><br/>
+                                                    <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="http://bayburtgrup.com.tr/" target="_blank"><?php echo $lang['browse'] ?></a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 timeline-pic wow fadeInRight animated" data-wow-delay=".7s" style="background-size: cover; visibility: visible; animation-delay: 0.7s; animation-name: fadeInRight;" data-bgimage="url(images/works/w2.jpg )">
+                                    <div class="col-md-6 timeline-pic wow fadeInRight animated" data-wow-delay=".7s" style="background-size: cover; visibility: visible; animation-delay: 0.7s; animation-name: fadeInRight;" data-bgimage="url(images/works/w2.png )">
                                     </div>
                                 </div>
                             </div>
@@ -92,8 +93,8 @@ include_once "header.php";
                                                 <div class="wow fadeInUp animated"  data-wow-delay="1.2s" style="background-size: cover; visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
                                                     <h4>Şenbay Madencilik</h4>
                                                     <p>
-                                                        Şenbay Madencilik'ın web sitesini oluşturduk. Şirket hakkında daha fazla bilgi için aşağıdaki bağlantıyı takip edin.<br/>
-                                                        <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="http://www.senbay.com.tr/" target="_blank">Incele</a>
+                                                        <?php echo $lang['w3'] ?><br/>
+                                                        <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="http://www.senbay.com.tr/" target="_blank"><?php echo $lang['browse'] ?></a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -113,8 +114,8 @@ include_once "header.php";
                                             <div class="wow fadeInUp animated" data-wow-delay="1.4s" style="background-size: cover; visibility: visible; animation-delay: 1.4s; animation-name: fadeInUp;">
                                                 <h4>Bayburt Enerji</h4>
                                                 <p>
-                                                    Bayburt Enerji'ın web sitesini oluşturduk. Şirket hakkında daha fazla bilgi için aşağıdaki bağlantıyı takip edin.<br/>
-                                                    <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="bayburtenerji.com" target="_blank">Incele</a>
+                                                    <?php echo $lang['w4'] ?><br/>
+                                                    <a style="padding:3px 7px;border-radius: 20px;color:#fff;background: #292ba0;" href="bayburtenerji.com" target="_blank"><?php echo $lang['browse'] ?></a>
                                                 </p>
                                             </div>
                                         </div>

@@ -4,7 +4,16 @@ $about = '';
 $services = '';
 $works = '';
 $news = '';
+session_start();
+$langs = array('az','tr','rus','en');
+$_SESSION['lang'] = 'az';
+if(isset($_GET['lang']) && $_GET['lang']!=''){
+    if(in_array($_GET['lang'], $langs)){       
+      $_SESSION['lang'] = $_GET['lang']; // Set session
+    }
+}
 
+include('lang/'.$_SESSION['lang'].'.php');
 $message = "";
 require_once "config.php";
 $sql = "INSERT INTO messages(name,email,subject,message) VALUES (?,?,?,?)"; 
@@ -31,12 +40,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <!DOCTYPE html>
-<html lang="az">
+<html lang="<?php echo $_SESSION['lang'] ?>">
 
 <head>
 <meta charset="utf-8" />
-<title>Buta Group</title>
+<title><?php echo $lang['header_title'] ?></title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta content="Buta Grup Medya Bilişim Teknoloji A.Ş. tam kapsamlı bilişim grubudur." name="description" />
 <meta content="buta,web tasarım,ar-ge,yazılım,dijital pazarlama,stratejik planlama, grafik tasarım" name="keywords" />
 <meta content="Buta Grup" name="author" />
@@ -76,57 +86,61 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <div id="wrapper">
 <!-- header begin -->
 <header class="header-light transparent scroll-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex justify-content-between">
-                        <div class="align-self-center header-col-left">
-                            <!-- logo begin -->
-                            <div id="logo">
-                                <a href="index.php">
-                                    <img style="width: 210px" alt="" src="images/logo.png" />
-                                </a>
-                            </div>
-                            <!-- logo close -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between">
+                    <div class="align-self-center header-col-left">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>">
+                                <img style="width: 210px" alt="" src="images/logo.png" />
+                            </a>
                         </div>
-                        <div class="align-self-center ml-auto header-col-mid">
-                            <!-- mainmenu begin -->
-                            <ul id="mainmenu">
-                                <li>
-                                    <a <?php echo $index ?> href="index.php">Ana səhifə</a>
-                                </li>
-                                <li>
-                                    <a <?php echo $about ?> href="about-us.php">Biz kimik?</a>
-                                </li>
-                                <li>
-                                    <a <?php echo $services ?> href="services.php">Biz nə edirik?</a>
-                                </li>
-                                <li>
-                                    <a <?php echo $works ?> href="works.php">Nə etdik?</a>
-                                </li>
-                                <li>
-                                    <a <?php echo $news ?> href="news.php">Xəbərlər</a>
-                                </li>
-                                <li style="display: inline-block;">
-                                    <div class="acilan">
-                                        <a href="?lang=az" style="padding-bottom: 0;"><img style="width: 20px;height: 20px;" src="images/azerbaijan.png" alt="az"/></a>
-                                        <div class="acılan-mezmun">
-                                            <a href="?lang=tr"><img style="width: 20px;height: 20px;" src="images/turkey.png" alt="tr"></a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="align-self-center ml-auto header-col-right">
-                            <a class="btn-custom" href="contact-us.php"><i class="fa fa-arrow-right"></i> ƏLAQƏ</a>
-                            <span id="menu-btn"></span>
-                        </div>
-                        <div class="clearfix"></div>
+                        <!-- logo close -->
                     </div>
+                    <div class="align-self-center ml-auto header-col-mid">
+                        <!-- mainmenu begin -->
+                        <ul id="mainmenu">
+                            <li>
+                                <a <?php echo $index ?> href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['home'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $about ?> href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['about'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $services ?> href="<?php echo 'services.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['services'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $works ?> href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['works'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $news ?> href="<?php echo 'news.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['news'] ?></a>
+                            </li>
+                            <li>
+                                <a style="padding-right: 0;" href="?lang=az"><img style="width: 20px;height: 20px;" src="images/azerbaijan.png" alt="az"/></a>
+                            </li>
+                            <li>
+                                <a style="padding-right: 0;" href="?lang=tr"><img style="width: 20px;height: 20px;" src="images/turkey.png" alt="tr"/></a>
+                            </li>
+                            <li>
+                                <a style="padding-right: 0;" href="?lang=rus"><img style="width: 20px;height: 20px;" src="images/russia.png" alt="rus"/></a>
+                            </li>
+                            <li>
+                                <a href="?lang=en"><img style="width: 20px;height: 20px;" src="images/united-kingdom.png" alt="en"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="align-self-center ml-auto header-col-right">
+                        <a class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
+                        <span id="menu-btn"></span>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 <!-- header close -->
 <!-- content begin -->
 <div class="no-bottom no-top" id="content">
@@ -140,7 +154,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="col-md-8 offset-md-2">
                             <form action='blank.php' class="row" id='form_subscribe' method="post" name="myForm">
                         <div class="col-md-12 text-center">
-                            <h1>Əlaqə</h1>
+                            <h1><?php echo $lang['contact-us_header'] ?></h1>
                             
                         </div>
                         <div class="clearfix"></div>
@@ -156,30 +170,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="row">
                     
                     <div class="col-lg-8 offset-md-2 mb-sm-30">
-                    <h3>Təklif və tənqidləriniz üçün aşağıdakı formu doldura və ya info@butagrup.com.tr ünvanına e-poçt göndərə bilərsiniz.</h3>
+                    <h3><?php echo $lang['suggestion'] ?></h3>
                     
-                    <form name="contactForm" id="contact_form" class="form-border" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                    <form name="contactForm" id="contact_form" class="form-border" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]."#message"); ?>">
                         <div class="field-set">
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Ad-Soyad:" />
+                            <input type="text" name="name" id="name" class="form-control" placeholder="<?php echo $lang['contact_name']?>" />
                         </div>
 
                         <div class="field-set">
-                            <input type="text" name="email" id="email" class="form-control" placeholder="E-poçt:" />
+                            <input type="text" name="email" id="email" class="form-control" placeholder="<?php echo $lang['contact_email'] ?>" />
                         </div>
 
                         <div class="field-set">
-                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Başlıq" />
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="<?php echo $lang['contact_subject'] ?>" />
                         </div>
 
                         <div class="field-set">
-                            <textarea name="message" id="message" class="form-control" placeholder="Mesajınız"></textarea>
+                            <textarea name="message" id="message" class="form-control" placeholder="<?php echo $lang['contact_message'] ?>"></textarea>
                         </div>
                         <?php echo $message ?>
                         
                         <div class="spacer-half"></div>
 
                         <div id="submit">
-                            <input type="submit" value="GÖNDƏR" class="btn btn-custom" />
+                            <input type="submit" value="<?php echo $lang['contact_submit'] ?>" class="btn btn-custom" />
                         </div>
                     </form>
                 </div>
@@ -190,16 +204,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="row">
                         <div class="col-md-12">
                             <div class="padding40 bg-color-2 text-light box-rounded">
-                                <h3>Buta Qrup Medi̇a İnformasi̇ya Texnologi̇yaları Sənaye və Ti̇carət Anoni̇m Şi̇rkəti̇</h3>
-                                <address class="s1">
-                                    <span><i class="fa fa-map-marker fa-lg"></i>İŞIK Küç. No:20, Tandoğan / ANKARA</span>
-                                    <span><i class="fa fa-phone fa-lg"></i>0850 302 28 82</span>
-                                   <span> <i  class="fa fa-fax fa-lg"></i>0312 229 00 10</span>
-                                    <span>
-                                        <i class="fa fa-envelope-o"></i>
-                                        <a href="mailto:info@butagrup.com.tr" target="_top"> info@butagrup.com.tr</a>
-                                    </span>
-                                </address>
+                                <?php echo $lang['contact_buta'] ?>
                             </div>
                         </div>
                     </div>

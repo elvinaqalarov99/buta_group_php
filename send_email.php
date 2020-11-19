@@ -1,7 +1,7 @@
 <?php 
 
 require_once "config.php";
-$email = $message = "";
+$message = "";
 
 $sql = "INSERT INTO emails(email) VALUES (?)"; 
 if($_SERVER["REQUEST_METHOD"] == "POST"){

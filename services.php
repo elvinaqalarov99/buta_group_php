@@ -17,7 +17,7 @@ include_once "header.php";
                 <div class="row align-items-center" style="background-color: cover">
                     <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".5s" style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                         <div class="text-left">
-							<h1>Davamlı strategiyalarla yaradılan yenilikçi ünsiyyətin markalara dəyər qatdığına inanırıq.</h1>
+							<h1><?php echo $lang['services_header'] ?></h1>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay=".5s" style='
@@ -28,7 +28,7 @@ include_once "header.php";
             </div>
     </section>
     <!-- section close -->
-	
+	<div class="spacer-20"></div>
 	<section class="no-top">
 		<div class="container">
             <div class="row">
@@ -38,11 +38,7 @@ include_once "header.php";
 					<div class="feature-box f-boxed style-3">
                         <i class="bg-color i-circle fa fa-laptop"></i>
                         <div class="text">
-                            <h4>Veb dizaynı və inkişafı</h4>
-                            Veb sayt dizaynı<br/>
-                            Məzmun İdarəetmə Tətbiqləri<br/>
-                            Elektron Ticarət Veb Dizaynı<br/>
-                            İnterfeys İnkişafı / UX / UI
+                            <?php echo $lang['s1'] ?>
                         </div>
 						<i class="wm fa fa-laptop"></i>
                     </div>
@@ -53,11 +49,7 @@ include_once "header.php";
 					<div class="feature-box f-boxed style-3">
                         <i class="bg-color i-circle fa fa-line-chart"></i>
                         <div class="text">
-                            <h4>Strateji planlaşdırma</h4>
-                            Yaradıcı Proses və Analiz<br/>
-                            İnteqrasiya<br/>
-                            Marketinqin planlaşdırılması<br/>
-                            Marketinq üzrə məsləhət                                
+                            <?php echo $lang['s2'] ?>                                
                         </div>
 						<i class="wm fa fa-line-chart"></i>
                     </div>
@@ -68,12 +60,7 @@ include_once "header.php";
 					<div class="feature-box f-boxed style-3">
                         <i class="bg-color i-circle fa fa-diamond"></i>
                         <div class="text">
-                            <h4>Korporativ şəxsiyyət və qrafik dizaynı</h4>
-                            Korporativ şəxsiyyət və loqo dizaynı<br/>
-                            Avtomobil dizaynı<br/>
-                            Qablaşdırma dizaynı<br/>
-                            Kataloq dizaynı<br/>
-                            Strateji planlaşdırma 
+                            <?php echo $lang['s3'] ?> 
                         </div>
 						<i class="wm fa fa-diamond"></i>
                     </div>
@@ -84,14 +71,7 @@ include_once "header.php";
 					<div class="feature-box f-boxed style-3">
                         <i class="bg-color i-circle fa fa-object-group"></i>
                         <div class="text">
-                            <h4>Ar-Ge</h4>
-                            Süni Zəka<br/>
-                            Virtual reallıq<br/>
-                            Sənaye 4.0<br/>
-                            Robot texnologiyaları<br/>
-                            3D printer-skaner<br/>
-                            Kripto Pulları<br/>
-                            Böyük məlumatlar
+                            <?php echo $lang['s4'] ?>
                         </div>
 						<i class="wm fa fa-object-group"></i>
                     </div>
@@ -102,10 +82,7 @@ include_once "header.php";
 					<div class="feature-box f-boxed style-3">
                         <i class="bg-color i-circle fa fa-hdd-o"></i>
                         <div class="text">
-                            <h4>Proqram təminatı</h4>
-                            AR-GE Layihələri<br/>
-                            Xüsusi Proqram Çözümləri<br/>
-                            Veb əsaslı layihələr                     
+                            <?php echo $lang['s5'] ?>                    
                         </div>
 						<i class="wm fa fa-hdd-o"></i>
                     </div>
@@ -116,19 +93,7 @@ include_once "header.php";
 					<div class="feature-box f-boxed style-3">
                         <i class="bg-color i-circle fa 	fa-pie-chart"></i>
                         <div class="text">
-                            <h4> Rəqəmsal Marketinq </h4>
-                            Rəqəmsal Strateji İnkişafı <br/>
-                            Sosial Media Marketinq Məsləhətçiliyi <br/>
-                            Sosial Media Kampaniyalarının İnkişafı <br/>
-                            Sosial Medianın İzlənməsi və Təhlili <br/>
-                            Məzmun İnkişafı və Platforma İdarəetmə <br/>
-                            Rəqəmsal Qrafik Dizayn <br/>
-                            Tətbiqin inkişafı <br/>
-                            Marka İcmalarının İnkişafı <br/>
-                            İcma İdarəetmə <br/>
-                            Onlayn Şikayət İdarəetmə <br/>
-                            Onlayn Reklam İdarəetmə və Konsaltinq <br/>
-                            Axtarış Motoru Optimizasiyası Məsləhətləri                               
+                            <?php echo $lang['s6'] ?>                               
                         </div>
 						<i class="wm fa fa-pie-chart"></i>
                     </div>
@@ -143,22 +108,12 @@ include_once "header.php";
 			<div class="row">
 				<div class="col-md-6 wow fadeInRight animated" data-wow-delay=".5s"
                 style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
-					<h2> Daha çox məlumat üçün <span class = "id-color"> bizə zəng edin </span>. Buta Group müştəri xidməti <span class = "id-color"> həmişə </span> sizə kömək etmək üçün burada. </h2>
-					<p class = "lead"> 24 saat hazırıq! </p>
+					<?php echo $lang['more_info'] ?>
 				</div>
 				
 				<div class="col-md-6 text-lg-center text-sm-center wow fadeInLeft animated" data-wow-delay=".5s"
                 style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-					<div class="phone-num-big">
-						<i class="fa fa-phone id-color"></i>
-						<span class="pnb-text">
-							indi bizə zəng edin
-						</span>
-						<span class="pnb-num">
-							0850 302 28 82
-						</span>
-					</div>
-					<a href="tel:0850-302-28-82" class="btn-custom capsule med">Bizimlə əlaqə saxlayın</a>
+					<?php echo $lang['tel'] ?>
 				</div>
 			</div>
 		</div>
@@ -170,28 +125,28 @@ include_once "header.php";
                 <div class="col-md-3 col-sm-6 wow animated fadeInUp" data-wow-delay=".5s">
                     <div class="de_count">
                         <h3 class="timer" data-to="26" data-speed="2000">0</h3>
-                        <span>Tamamlanmış işlər</span>
+                        <span><?php echo $lang['counter1'] ?></span>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 wow animated fadeInUp" data-wow-delay=".7s">
                     <div class="de_count">
                         <h3 class="timer" data-to="8" data-speed="2000">0</h3>
-                        <span>İş davam edir</span>
+                        <span><?php echo $lang['counter2'] ?></span>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 wow animated fadeInUp" data-wow-delay=".9s">
                     <div class="de_count">
                         <h3 class="timer" data-to="18" data-speed="2000">0</h3>
-                        <span>Xoşbəxt müştəri</span>
+                        <span><?php echo $lang['counter3'] ?></span>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 wow animated fadeInUp" data-wow-delay="1.2s">
                     <div class="de_count">
                         <h3 class="timer" data-to="472" data-speed="2000">0</h3>
-                        <span>Qəhvə</span>
+                        <span><?php echo $lang['counter4'] ?></span>
                     </div>
                 </div>
             </div>
