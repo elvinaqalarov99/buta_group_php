@@ -55,7 +55,7 @@ include('lang/'.$_SESSION['lang'].'.php');
 
 </head>
 
-<body>
+<body data-anm=".anm">
 <div id="wrapper">
 <!-- header begin -->
 <header class="header-light transparent scroll-light">
@@ -105,7 +105,7 @@ include('lang/'.$_SESSION['lang'].'.php');
                             </ul>
                         </div>
                         <div class="align-self-center ml-auto header-col-right">
-                            <a class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
+                            <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
                             <span id="menu-btn"></span>
                         </div>
                         <div class="clearfix"></div>

@@ -8,7 +8,7 @@ $news = '';
 include_once "header.php";
 ?>
     <!-- content begin -->
-    <div class="no-bottom no-top" id="content">
+    <div class="no-bottom no-top anm" data-spped-x='16' data-spped-y='-2' data-spped-scale='50' data-spped-rotate='-25' data-spped-opacity='50' id="content">
     <div id="top"></div>
     <section data-bgimage="url(images/background/1.png) bottom" class="full-height vertical-center">
         <div class="container">
@@ -17,16 +17,16 @@ include_once "header.php";
 
                     <div class="h1">
                         <div class="typed-strings">
-                            <p><span class="id-color"><?php echo $lang['typed1'] ?></span></p>
-                            <p><span class="id-color"><?php echo $lang['typed2'] ?></span></p>
-                            <p><span class="id-color"><?php echo $lang['typed3'] ?></span></p>
+                            <p><span style="color: #3E4095;" class="id-color"><?php echo $lang['typed1'] ?></span></p>
+                            <p><span style="color: #3E4095;" class="id-color"><?php echo $lang['typed2'] ?></span></p>
+                            <p><span style="color: #3E4095;" class="id-color"><?php echo $lang['typed3'] ?></span></p>
                         </div>
                         <div class="typed"></div>
                     </div>
 
                     <p class="lead"><?php echo $lang['lead'] ?></p>
                     <div class="spacer-20"></div>
-                    <a class="btn-custom" href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['index_about'] ?></a>&nbsp;
+                    <a class="btn-custom" style="background: #3E4095;" href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['index_about'] ?></a>&nbsp;
                     <div class="mb-sm-30"></div>
                 </div>
 
@@ -52,20 +52,20 @@ include_once "header.php";
             <div class="row" style="margin-top: 90px;">
                 <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
                     <div class="f-box f-icon-left f-icon-rounded">
-                        <i class="fa fa-laptop bg-color-2 text-light"></i>
+                        <i class="fa fa-laptop bg-color-3 text-light" id="hover_bg"></i>
                         <div class="fb-text">
-                            <h4><?php echo $lang['w1'] ?></h4>
-                            <p><?php echo $lang['w1_p'] ?></p>
+                            <h4><?php echo $lang['h1'] ?></h4>
+                            <p><?php echo $lang['h1_p'] ?></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
                     <div class="f-box f-icon-left f-icon-rounded">
-                        <i class="fa fa-paper-plane-o bg-color-3 text-light"></i>
+                        <i class="fa fa-paper-plane-o bg-color-2 text-light"></i>
                         <div class="fb-text">
-                            <h4><?php echo $lang['w2'] ?></h4>
-                            <p><?php echo $lang['w2_p'] ?></p>
+                            <h4><?php echo $lang['h2'] ?></h4>
+                            <p><?php echo $lang['h2_p'] ?></p>
                         </div>
                     </div>
                 </div>
@@ -74,8 +74,8 @@ include_once "header.php";
                     <div class="f-box f-icon-left f-icon-rounded">
                         <i class="fa fa-line-chart bg-color text-light"></i>
                         <div class="fb-text">
-                            <h4><?php echo $lang['w3'] ?></h4>
-                            <p><?php echo $lang['w3_p'] ?></p>
+                            <h4><?php echo $lang['h3'] ?></h4>
+                            <p><?php echo $lang['h3_p'] ?></p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ include_once "header.php";
                     <h2><?php echo $lang['main'] ?></h2>
                     <p class="lead"><?php echo $lang['main_lead'] ?></p>
                     <div class="spacer-half"></div>
-                    <a class="btn-custom" href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['index_about'] ?></a>
+                    <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['index_about'] ?></a>
                 </div>
             </div>
         </div>
@@ -221,7 +221,7 @@ include_once "header.php";
 
                 <div class="col-lg-6 offset-lg-3 wow animated fadeInUp" data-wow-delay=".7s">
                     <div class="text-center">
-                        <a class="btn-custom" href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang["index_works"] ?></a>
+                        <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang["index_works"] ?></a>
                     </div>
                 </div>
 
@@ -246,7 +246,7 @@ include_once "header.php";
                         <img src="images/img/senbay.png" class="img-fluid" alt="" />
                         <img src="images/img/senbayp.png" class="img-fluid" alt="" />
                     </div>
-                    <div style="text-align: center; margin-top: 100px;"> <a class="btn-custom" href="<?php echo 'about.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['all_refs'] ?></a></div>
+                    <div  style="text-align: center; margin-top: 100px;"> <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['all_refs'] ?></a></div>
                 </div>
             </div>
         </div>
@@ -254,6 +254,7 @@ include_once "header.php";
 </div>
 <!-- content close -->
 <?php include_once "footer.php" ?>
+
 
 <script>
     $(function () {
@@ -269,5 +270,6 @@ include_once "header.php";
             callback: function () { null; },
             resetCallback: function () { newTyped(); }
         });
-    });
+    }); 
+ 
 </script>

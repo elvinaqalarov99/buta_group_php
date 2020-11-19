@@ -79,7 +79,7 @@ include_once "header.php";
                         <img src="images/img/senbay.png" class="img-fluid" alt="" />
                         <img src="images/img/senbayp.png" class="img-fluid" alt="" />
                     </div>
-                    <div style="text-align: center; margin-top: 100px;"> <a class="btn-custom" href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['all_refs'] ?></a></div>
+                    <div style="text-align: center; margin-top: 100px;"> <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['all_refs'] ?></a></div>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@ include_once "header.php";
                 </div>
 
                 <div class="col-md-4 text-lg-right text-sm-center">
-                    <a href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>" class="btn-custom capsule med"><?php echo $lang['about_journey_begin'] ?></a>
+                    <a href="<?php echo 'services.php?lang='.$_SESSION['lang'];?>" class="btn-custom capsule med"><?php echo $lang['about_journey_begin'] ?></a>
                 </div>
             </div>
         </div>

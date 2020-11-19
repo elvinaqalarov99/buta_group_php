@@ -28,9 +28,9 @@
                     <h5><?php echo $lang['newsletter']; ?></h5>
 
                     <p><?php echo $lang['subscribe'] ?></p>
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"].'#form_subscribe'.'?lang='.$_SESSION['lang']); ?>" class="row" id="form_subscribe" method="post" name="form_subscribe">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"].'?lang='.$_SESSION['lang'].'#form_subscribe'); ?>" class="row" id="form_subscribe" method="post" name="form_subscribe">
                         <div class="col text-center">
-                            <input class="form-control" id="name_1" name="name_1" placeholder="<?php echo $lang['email'] ?>" type="text" /> <a href="#" onclick="this.closest('form').submit();return false;" id="btn-submit"><i class="arrow_right"></i></a>
+                            <input class="form-control" id="name_1" name="name_1" placeholder="<?php echo $lang['email'] ?>" type="text" /> <a href="#" onclick="this.closest('form').submit();return false;" id="btn-submit"><i style="background: #3E4095;" class="arrow_right"></i></a>
                             <?php echo $message;  ?>
                             <div class="clearfix"></div>
                         </div>
@@ -48,13 +48,13 @@
 
             <div class="col-md-6 text-md-right text-sm-left">
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/butagruptr/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-                    <a href="https://twitter.com/butagrup" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a href="https://www.instagram.com/butagrup/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-                    <a href="https://www.linkedin.com/company/buta-grup/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a href="https://plus.google.com/u/0/103136009122761650644/" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=905302363395" target="_blank"><i class="fa fa-whatsapp fa-lg"></i></a>
-                    <a href="https://www.youtube.com/channel/UCHnlDWK84ZgzQRAZgSb65aQ" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a href="https://www.facebook.com/butagruptr/" target="_blank"><i style="background: #3E4095;" class="fa fa-facebook fa-lg"></i></a>
+                    <a href="https://twitter.com/butagrup" target="_blank"><i style="background: #3E4095;" class="fa fa-twitter fa-lg"></i></a>
+                    <a href="https://www.instagram.com/butagrup/" target="_blank"><i style="background: #3E4095;" class="fa fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/company/buta-grup/" target="_blank"><i style="background: #3E4095;" class="fa fa-linkedin fa-lg"></i></a>
+                    <a href="https://plus.google.com/u/0/103136009122761650644/" target="_blank"><i style="background: #3E4095;" class="fa fa-google-plus fa-lg"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=905302363395" target="_blank"><i style="background: #3E4095;" class="fa fa-whatsapp fa-lg"></i></a>
+                    <a href="https://www.youtube.com/channel/UCHnlDWK84ZgzQRAZgSb65aQ" target="_blank"><i style="background: #3E4095;" class="fa fa-youtube fa-lg"></i></a>
                 </div>
             </div>
         </div>
