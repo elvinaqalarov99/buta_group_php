@@ -7,6 +7,8 @@
   $lang['works']      = 'Neler yaptık?';
   $lang['news']       = 'Haberler';
   $lang['connection'] = 'ILETIŞIM';
+  $lang['team'] = 'Takım';
+
 
   //footer
   $lang['footer_buta'] = "<strong> Buta Group Medya Bilgi Teknolojileri A.Ş. tam ölçekli bir IT ekibidir. </strong> Yaratıcı ekip, müşterilerinin A'dan Z'ye tüm ihtiyaçlarını karşılar. Bir şirket, kurumsal kimlik, sosyal medya, web tasarımı / yazılımı, e-ticaret, grafik tasarım, marka koruması ve dijital pazarlama gibi alanlarda uzmanlaşmıştır.";
@@ -158,4 +160,22 @@
                    </span>
                </address>" ;
 
+  //team
+  $lang['team_p'] = "Değerli ekibimizle tanışın";
+  $lang['t1'] = "Fynley Wilkinson";
+  $lang['t1_p'] = "Baş Kreatif Sorumlusu";
+  $lang['t2'] = "Myra Welsh";
+  $lang['t2_p'] = "Baş Teknoloji Sorumlusu";
+  $lang['t3'] = "Aysha Shepard";
+  $lang['t3_p'] = "İcra Kurulu Başkanı";
+  $lang['t4'] = "Robyn Peel";
+  $lang['t4_p'] = "Finans Direktörü";
+  $lang['t5'] = "Kieran Monaghan";
+  $lang['t5_p'] = "Geliştirme Direktörü";
+  $lang['t6'] = "Daniela Beattie";
+  $lang['t6_p'] = "Müşteri Hizmetleri Direktörü";
+  $lang['t7'] = "Nabila Zuniga";
+  $lang['t7_p'] = "Kıdemli Geliştirici";
+  $lang['t8'] = "Malaki Webber";
+  $lang['t8_p'] = "Kıdemli Geliştirici";
 ?>

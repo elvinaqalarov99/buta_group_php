@@ -7,6 +7,8 @@
   $lang['works']      = 'What we did?';
   $lang['news']      = 'News';
   $lang['connection'] = 'CONTACT';
+  $lang['team'] = 'Team';
+
 
   //footer
   $lang['footer_buta'] = "<strong> Buta Group Media Information Technologies Inc. It is a full-scale IT team. </strong> The creative team meets all the A to Z needs of its customers. A company specializes in areas such as corporate identity, social media, web design / software, e-commerce, graphic design, brand protection and digital marketing.";
@@ -157,4 +159,24 @@
                          <a href='mailto:info@butagrup.com.tr' target='_top'> info@butagrup.com.tr </a>
                      </span>
                  </address>" ;
+
+  //team
+  $lang['team_p'] = "Meet our precious team";
+  $lang['t1'] = "Fynley Wilkinson";
+  $lang['t1_p'] = "Chief Creative Officer";
+  $lang['t2'] = "Myra Welsh";
+  $lang['t2_p'] = "Chief Technology Officer";
+  $lang['t3'] = "Aysha Shepard";
+  $lang['t3_p'] = "Chief Executive Officer";
+  $lang['t4'] = "Robyn Peel";
+  $lang['t4_p'] = "Director of Finance";
+  $lang['t5'] = "Kieran Monaghan";
+  $lang['t5_p'] = "Director of Development";
+  $lang['t6'] = "Daniela Beattie";
+  $lang['t6_p'] = "Director of Client Services";
+  $lang['t7'] = "Nabila Zuniga";
+  $lang['t7_p'] = "Senior Developer";
+  $lang['t8'] = "Malaki Webber";
+  $lang['t8_p'] = "Senior Developer";
+
 ?>

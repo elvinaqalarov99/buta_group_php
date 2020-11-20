@@ -7,6 +7,7 @@
   $lang['works']      = 'Nə etdik?';
   $lang['news']       = 'Xəbərlər';
   $lang['connection'] = 'ƏLAQƏ';
+  $lang['team'] = 'Komandamiz';
 
   //footer
   $lang['footer_buta'] = '<strong>Buta Grup Medİa İnformasiya Texnalogiyaları A.Ş. tam miqyaslı İT qrupudur.</strong> Yaradıcı komanda,müştərilərinin A’dan Z’ye tüm ehtiyaclarına xidmət edir. Bir şirkət firması korporativ şəxsiyyət, sosial media, veb dizayn / proqram təminatı, elektron ticarət, qrafik dizayn, marka qorunması, rəqəmsal marketinq kimi sahələrdə işləyir.';
@@ -157,5 +158,25 @@
                       <a href='mailto:info@butagrup.com.tr' target='_top'>info@butagrup.com.tr</a>
                   </span>
               </address>" ;
+
+  //team
+  $lang['team_p'] = 'Qiymətli komandamızla tanış olun';
+  $lang['t1'] = "Fynley Wilkinson";
+  $lang['t1_p'] = "Baş Yaradıcılıq Müdiri";
+  $lang['t2'] = "Myra Welsh";
+  $lang['t2_p'] = "Texnologiya üzrə Baş Direktor";
+  $lang['t3'] = "Aysha Shepard";
+  $lang['t3_p'] = "Baş icraçı direktor";
+  $lang['t4'] = "Robyn Peel";
+  $lang['t4_p'] = "Maliyyə Direktoru";
+  $lang['t5'] = "Kieran Monaghan";
+  $lang['t5_p'] = "İnkişaf Direktoru";
+  $lang['t6'] = "Daniela Beattie";
+  $lang['t6_p'] = "Müştəri Xidmətləri Direktoru";
+  $lang['t7'] = "Nabila Zuniga";
+  $lang['t7_p'] = "Senior Developer";
+  $lang['t8'] = "Malaki Webber";
+  $lang['t8_p'] = "Senior Developer";
+
 
 ?>
