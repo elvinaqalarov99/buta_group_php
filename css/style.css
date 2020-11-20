@@ -560,6 +560,7 @@ header .header-col.mid .social-icons{
 .header-light #mainmenu>li>a {
 	color: #222;
 	font-weight:600;
+	font-size: 12px;
 }
 #mainmenu li li{
 	font-size:14px;
