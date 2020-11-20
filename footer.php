@@ -4,7 +4,7 @@
         <div class="row">
 			<div class="col-lg-6">
                 <div class="widget">
-                    <a href="index.php"><img style="width: 210px" alt="" class="logo" src="images/logo.png" /></a>
+                    <a href="index.php"><img style="max-width: 200px" alt="" class="logo" src="images/logo.png" /></a>
                     <div class="spacer-20"></div>
                     <p><?php echo $lang['footer_buta'] ?></p>
                 </div>
@@ -17,8 +17,10 @@
                         <li><a href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['footer_about'] ?></a></li>
                         <li><a href="<?php echo 'services.php?lang='.$_SESSION['lang'];?>"><?php echo mb_substr($lang['services'],0,-1,'UTF-8') ?></a></li>
                         <li><a href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['footer_done'] ?></a></li>
+                        <li><a href="<?php echo 'our-team.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['team'] ?></a></li>
                         <li><a href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo mb_convert_case($lang['connection'], MB_CASE_TITLE, "UTF-8"); ?></a></li>
                         <li><a href="<?php echo 'news.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['news'] ?></a></li>
+
                     </ul>
                 </div>
             </div>

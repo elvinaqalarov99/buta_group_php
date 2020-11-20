@@ -98,7 +98,7 @@ switch ($_SESSION['lang']) {
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>">
-								<img style="width: 210px" alt="" src="images/logo.png" />
+								<img id="our_logo" style="max-width: 200px" alt="" src="images/logo.png" />
 							</a>
                         </div>
                         <!-- logo close -->
