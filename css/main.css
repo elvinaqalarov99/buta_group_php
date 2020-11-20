@@ -1,3 +1,14 @@
 .aktiv{
-	color: #3E4095 !important;
+	color: #3e4095 !important;
+}
+
+#flags{ width: 58px !important }
+
+@media screen and (max-width: 576px) {
+
+	#flags li{ padding: 0 !important }
+	a#tr,a#az,a#rus,a#en{ padding: 10px 18px 10px 0 !important;  }
+	a#tr+span,a#az+span,a#rus+span,a#en+span{ margin-top: 4px !important;  }
+
+
 }
