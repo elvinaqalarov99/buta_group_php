@@ -15,7 +15,7 @@ $language2 = "";
 $language3 = "";
 $language4 = "";
 
-switch ($_GET['lang']) {
+switch ($_SESSION['lang']) {
     case 'az':
         $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
         $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='tr'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='tr'/></a>";
