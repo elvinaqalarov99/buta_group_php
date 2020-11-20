@@ -40,7 +40,7 @@ include_once "header.php";
     <section class="no-top pos-top relative" style="margin-top: 100px;">
         <div class="container">
 			<div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInLeft" data-wow-delay=".7s">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInLeft" data-wow-delay=".5s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -62,7 +62,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".9s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".7s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -84,7 +84,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".9s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".7s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -106,7 +106,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInRight" data-wow-delay=".7s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInRight" data-wow-delay=".5s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -128,7 +128,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInLeft" data-wow-delay=".9s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInLeft" data-wow-delay=".7s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -150,7 +150,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay="1.2s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".9s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -172,7 +172,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay="1.2s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".9s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
@@ -194,7 +194,7 @@ include_once "header.php";
                     </div>
                 </div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInRight" data-wow-delay=".9s">
+				<div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInRight" data-wow-delay=".7s">
                     <div class="f-profile text-center">
                         <div class="fp-wrap f-invert">
 							<div class="fpw-overlay">
