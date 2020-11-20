@@ -137,6 +137,125 @@ include_once "header.php";
             </div>
         </div>
     </section>
+    <div class="spacer-20"></div>
+    <div class="spacer-20"></div>
+    <div class="spacer-20"></div>
+    <div class="spacer-20"></div>
+    <div class="spacer-20"></div>
+    <section id="section-services" data-bgcolor="#F6F7FB">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 wow animated fadeInUp" data-wow-delay=".5s">
+                    <form action='blank.php' class="row" id='form_subscribe' method="post" name="myForm">
+                <div class="col-md-12 text-center">
+                    <h1 style="font-size: 40px;"><?php echo $lang['team'] ?></h1>                
+                </div>
+                <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="no-top pos-top" style="margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInLeft" data-wow-delay=".7s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                                <div class="fpwo-wrap">
+                                    <div class="fpwow-icons">
+                                        <a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>                                  
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="images/img/first.gif" class="fp-image img-fluid" alt="">
+                        </div>
+
+                        <h4><?php echo $lang['t1'] ?></h4>
+                        <?php echo $lang['t1_p'] ?>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".9s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                                <div class="fpwo-wrap">
+                                    <div class="fpwow-icons">
+                                        <a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>                                  
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="images/img/second.gif" class="fp-image img-fluid" alt="">
+                        </div>
+
+                        <h4><?php echo $lang['t2'] ?></h4>
+                        <?php echo $lang['t2_p'] ?>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInUp" data-wow-delay=".9s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                                <div class="fpwo-wrap">
+                                    <div class="fpwow-icons">
+                                        <a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>                                  
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="images/img/third.gif" class="fp-image img-fluid" alt="">
+                        </div>
+
+                        <h4><?php echo $lang['t3'] ?></h4>
+                        <?php echo $lang['t3_p'] ?>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow animated fadeInRight" data-wow-delay=".7s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                                <div class="fpwo-wrap">
+                                    <div class="fpwow-icons">
+                                        <a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a href="#" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>                                  
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="images/img/fourth.gif" class="fp-image img-fluid" alt="">
+                        </div>
+
+                        <h4><?php echo $lang['t4'] ?></h4>
+                        <?php echo $lang['t4_p'] ?>
+                    </div>
+                </div>
+                <div class="spacer-10"></div>
+                <div class="spacer-10"></div>
+                <div class="spacer-10"></div>
+
+                <div class="col-lg-6 offset-lg-3 wow animated fadeInUp" data-wow-delay=".9s">
+                    <div class="text-center">
+                        <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'our-team.php?lang='.$_SESSION['lang'];?>"><?php echo $lang["all_team"] ?></a>
+                    </div>
+                </div>
+    </section>
     <section id="section-services" data-bgcolor="#F6F7FB">
         <div class="container">
             <div class="row">
