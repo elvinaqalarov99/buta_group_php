@@ -4,7 +4,7 @@
         <div class="row">
 			<div class="col-lg-6">
                 <div class="widget">
-                    <a href="index.php"><img style="max-width: 200px" alt="" class="logo" src="images/logo.png" /></a>
+                    <a href="index.php"><img style="max-width: 200px" alt="" id="our_logo" class="logo" src="images/logo.png" /></a>
                     <div class="spacer-20"></div>
                     <p><?php echo $lang['footer_buta'] ?></p>
                 </div>

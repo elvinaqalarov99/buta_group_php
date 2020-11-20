@@ -140,8 +140,8 @@ switch ($_SESSION['lang']) {
                             </li>
                         </ul>
                     </div>
-                    <div class="align-self-center ml-auto header-col-right">
-                        <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
+                    <div class="align-self-center ml-auto header-col-right mobile">
+                        <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo  mb_convert_case($lang['connection'], MB_CASE_TITLE, "UTF-8"); ?></a>
                         <span id="menu-btn"></span>
                     </div>
                     <div class="clearfix"></div>

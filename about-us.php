@@ -20,10 +20,10 @@ include_once "header.php";
                 <div class="row align-items-center" style="background-color: cover">
                     <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".5s" style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                         <div class="text-left">
-                            <h1 style="font-size: 40px;"><?php echo $lang['about_header'] ?></h1>
+                            <h1 style="font-size: 37px;"><?php echo  mb_convert_case($lang['about_header'], MB_CASE_TITLE, "UTF-8"); ?></h1>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay=".5s" style='
+                    <div class="col-lg-6 wow fadeInLeft animated" id="about_misc_photo" data-wow-delay=".5s" style='
                     background: url("images/misc/6.png");height: 55vh; background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;' data-bgimage="url(images/misc/6.png)">
                     </div> 
                     <div class="clearfix"></div> 
@@ -68,7 +68,7 @@ include_once "header.php";
             <div class="row align-items-center">
                 <div class="spacer-double"></div>
 
-                <h2 style="margin: auto;" class="wow animated fadeInUp" data-wow-delay=".5s"><?php echo $lang['index_refs'] ?></h2>
+                <h2 style="margin: auto; font-size: 30px;" class="wow animated fadeInUp" data-wow-delay=".5s"><?php echo $lang['index_refs'] ?></h2>
 
                 <div class="col-md-12 wow fadeInUp animated" data-wow-delay=".5s" style="margin-top: 100px;">
                     <div id="owl-logo" class="logo-carousel owl-carousel owl-theme">

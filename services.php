@@ -17,10 +17,10 @@ include_once "header.php";
                 <div class="row align-items-center" style="background-color: cover">
                     <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".5s" style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                         <div class="text-left">
-							<h1><?php echo $lang['services_header'] ?></h1>
+							<h1 style="font-size: 37px;"><?php echo $lang['services_header'] ?></h1>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay=".5s" style='
+                    <div class="col-lg-6 wow fadeInLeft animated" id="about_misc_photo" data-wow-delay=".5s" style='
                     background: url("images/misc/2.png");height: 60vh; background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;' data-bgimage="url(images/misc/2.png)">
                     </div> 
                     <div class="clearfix"></div> 
@@ -106,7 +106,7 @@ include_once "header.php";
     <section data-bgimage="url(images/background/7.png) center">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 wow fadeInRight animated" data-wow-delay=".5s"
+				<div class="col-md-6 wow fadeInRight animated" id="contact_us" data-wow-delay=".5s"
                 style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
 					<?php echo $lang['more_info'] ?>
 				</div>

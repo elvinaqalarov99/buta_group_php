@@ -5,8 +5,6 @@ $services = '';
 $works = '';
 $news = '';
 $team = '';
-
-
 include_once "header.php";
 ?>
     <!-- content begin -->
@@ -19,9 +17,9 @@ include_once "header.php";
 
                     <div class="h1">
                         <div class="typed-strings">
-                            <p><span style="color: #3E4095;" class="id-color"><?php echo $lang['typed1'] ?></span></p>
-                            <p><span style="color: #3E4095;" class="id-color"><?php echo $lang['typed2'] ?></span></p>
-                            <p><span style="color: #3E4095;" class="id-color"><?php echo $lang['typed3'] ?></span></p>
+                            <p><span style="color: #3E4095; font-size: 37px;" class="id-color"><?php echo $lang['typed1'] ?></span></p>
+                            <p><span style="color: #3E4095; font-size: 37px;" class="id-color"><?php echo $lang['typed2'] ?></span></p>
+                            <p><span style="color: #3E4095; font-size: 37px;" class="id-color"><?php echo $lang['typed3'] ?></span></p>
                         </div>
                         <div class="typed"></div>
                     </div>
@@ -95,7 +93,7 @@ include_once "header.php";
                 </div>
 
                 <div class="col-lg-5 offset-md-1 wow fadeInLeft" data-wow-delay="0s">
-                    <h2><?php echo $lang['main'] ?></h2>
+                    <h2 style="font-size: 30px;"><?php echo $lang['main'] ?></h2>
                     <p class="lead"><?php echo $lang['main_lead'] ?></p>
                     <div class="spacer-half"></div>
                     <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['index_about'] ?></a>

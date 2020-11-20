@@ -18,7 +18,7 @@ include_once "header.php";
                 <div class="row align-items-center" style="background-color: cover">
                     <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".5s" style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                         <div class="text-left">
-                            <h1><?php echo $lang['works_header'] ?></h1>
+                            <h1 style="font-size: 37px;"><?php echo $lang['works_header'] ?></h1>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay=".5s" style='

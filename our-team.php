@@ -21,7 +21,7 @@ include_once "header.php";
                             <form action='blank.php' class="row" id='form_subscribe' method="post" name="myForm">
 
                         <div class="col-md-12 text-center">
-                            <h1><?php echo $lang['team'] ?></h1>
+                            <h1 style="font-size: 37px;"><?php echo $lang['team'] ?></h1>
                             <p><?php echo $lang['team_p'] ?></p>
 							<img src="https://i.pinimg.com/originals/24/3b/24/243b24ce3b4d9bc259810eeecd67dc20.gif" style="width: 100%; height: 70%; margin-top: 50px;" alt="">
 							<!-- https://i.pinimg.com/originals/ac/14/0a/ac140a627af854f14c7f653efd7d53ae.gif -->
