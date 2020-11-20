@@ -162,6 +162,7 @@
 
   //team
   $lang['team_p'] = "Meet our precious team";
+  $lang["all_team"] = "All team";
   $lang['t1'] = "Fynley Wilkinson";
   $lang['t1_p'] = "Chief Creative Officer";
   $lang['t2'] = "Myra Welsh";

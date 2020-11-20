@@ -162,6 +162,7 @@
 
   //team
   $lang['team_p'] = "Değerli ekibimizle tanışın";
+  $lang["all_team"] = "Bütün takım";
   $lang['t1'] = "Fynley Wilkinson";
   $lang['t1_p'] = "Baş Kreatif Sorumlusu";
   $lang['t2'] = "Myra Welsh";

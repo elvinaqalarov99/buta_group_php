@@ -161,6 +161,7 @@
 
   //team
   $lang['team_p'] = 'Qiymətli komandamızla tanış olun';
+  $lang["all_team"] = "Bütün komanda";
   $lang['t1'] = "Fynley Wilkinson";
   $lang['t1_p'] = "Baş Yaradıcılıq Müdiri";
   $lang['t2'] = "Myra Welsh";
