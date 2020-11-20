@@ -7,7 +7,7 @@
   $lang['works']      = 'Nə etdik?';
   $lang['news']       = 'Xəbərlər';
   $lang['connection'] = 'ƏLAQƏ';
-  $lang['team'] = 'Komandamiz';
+  $lang['team'] = 'Komandamız';
 
   //footer
   $lang['footer_buta'] = '<strong>Buta Grup Medİa İnformasiya Texnalogiyaları A.Ş. tam miqyaslı İT qrupudur.</strong> Yaradıcı komanda,müştərilərinin A’dan Z’ye tüm ehtiyaclarına xidmət edir. Bir şirkət firması korporativ şəxsiyyət, sosial media, veb dizayn / proqram təminatı, elektron ticarət, qrafik dizayn, marka qorunması, rəqəmsal marketinq kimi sahələrdə işləyir.';
