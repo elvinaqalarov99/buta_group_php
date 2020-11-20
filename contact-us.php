@@ -4,6 +4,7 @@ $about = '';
 $services = '';
 $works = '';
 $news = '';
+$team = '';
 session_start();
 $langs = array('az','tr','rus','en');
 $_SESSION['lang'] = 'az';
@@ -36,7 +37,37 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         mysqli_stmt_close($stmt);
     }
     mysqli_close($link);
+}
+$language1 = "";
+$language2 = "";
+$language3 = "";
+$language4 = "";
 
+switch ($_GET['lang']) {
+    case 'az':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='az'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='az'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=rus' id='az'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='az'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=en' id='az'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='az'/></a>";
+        break;
+    case 'tr':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=tr' id='az'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='az'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=rus' id='az'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='az'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=en' id='az'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='az'/></a>";
+        break;
+    case 'rus':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=rus' id='az'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='az'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='az'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='az'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=en' id='az'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='az'/></a>";
+        break;
+    case 'en':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=en' id='az'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='az'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='az'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='az'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=rus' id='az'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='az'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        break;
 }
 ?>
 <!DOCTYPE html>
@@ -118,21 +149,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <a <?php echo $news ?> href="<?php echo 'news.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['news'] ?></a>
                             </li>
                             <li>
-                                <a style="padding-right: 0;" href="?lang=az"><img style="width: 20px;height: 20px;" src="images/azerbaijan.png" alt="az"/></a>
+                                <a <?php echo $team ?> href="<?php echo 'our-team.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['team'] ?></a>
                             </li>
                             <li>
-                                <a style="padding-right: 0;" href="?lang=tr"><img style="width: 20px;height: 20px;" src="images/turkey.png" alt="tr"/></a>
-                            </li>
-                            <li>
-                                <a style="padding-right: 0;" href="?lang=rus"><img style="width: 20px;height: 20px;" src="images/russia.png" alt="rus"/></a>
-                            </li>
-                            <li>
-                                <a href="?lang=en"><img style="width: 20px;height: 20px;" src="images/united-kingdom.png" alt="en"/></a>
+                                <?php echo $language1 ?>
+                                <ul id="flags">
+                                    <li>
+                                        <?php echo $language2 ?>
+                                    </li>
+                                    <li>
+                                        <?php echo $language3 ?>
+                                    </li>
+                                    <li>
+                                        <?php echo $language4 ?>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="align-self-center ml-auto header-col-right">
-                        <a class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
+                        <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
                         <span id="menu-btn"></span>
                     </div>
                     <div class="clearfix"></div>

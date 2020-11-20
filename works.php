@@ -4,6 +4,8 @@ $about = '';
 $services = '';
 $works = 'class="aktiv"';
 $news = '';
+$team = '';
+
 
 include_once "header.php";
 ?>

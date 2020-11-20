@@ -10,6 +10,37 @@ if(isset($_GET['lang']) && $_GET['lang']!=''){
 }
 
 include('lang/'.$_SESSION['lang'].'.php');
+$language1 = "";
+$language2 = "";
+$language3 = "";
+$language4 = "";
+
+switch ($_GET['lang']) {
+    case 'az':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='tr'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='tr'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=rus' id='rus'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='rus'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=en' id='en'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='en'/></a>";
+        break;
+    case 'tr':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=tr' id='tr'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='tr'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=rus' id='rus'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='rus'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=en' id='en'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='en'/></a>";
+        break;
+    case 'rus':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=rus' id='rus'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='rus'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='tr'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='tr'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=en' id='en'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='en'/></a>";
+        break;
+    case 'en':
+        $language1 = "<a style='padding: 29px 0 0 18px;' href='?lang=en' id='en'><img style='width: 20px;height: 20px;' src='images/united-kingdom.png' alt='en'/></a>";
+        $language2 = "<a style='padding: 0 0 0 9px;' href='?lang=tr' id='tr'><img style='width: 20px;height: 20px;' src='images/turkey.png' alt='tr'/></a>";
+        $language3 = "<a style='padding: 0 0 0 9px;' href='?lang=rus' id='rus'><img style='width: 20px;height: 20px;' src='images/russia.png' alt='rus'/></a>";
+        $language4 = "<a style='padding: 0 0 0 9px;' href='?lang=az' id='az'><img style='width: 20px;height: 20px;' src='images/azerbaijan.png' alt='az'/></a>";
+        break;
+}
 ?>
 
 <!DOCTYPE html>
@@ -55,63 +86,68 @@ include('lang/'.$_SESSION['lang'].'.php');
 
 </head>
 
-<body data-anm=".anm">
+<body>
 <div id="wrapper">
 <!-- header begin -->
 <header class="header-light transparent scroll-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex justify-content-between">
-                        <div class="align-self-center header-col-left">
-                            <!-- logo begin -->
-                            <div id="logo">
-                                <a href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>">
-									<img style="width: 210px" alt="" src="images/logo.png" />
-								</a>
-                            </div>
-                            <!-- logo close -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between">
+                    <div class="align-self-center header-col-left">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>">
+								<img style="width: 210px" alt="" src="images/logo.png" />
+							</a>
                         </div>
-                        <div class="align-self-center ml-auto header-col-mid">
-                            <!-- mainmenu begin -->
-                            <ul id="mainmenu">
-                                <li>
-                                    <a <?php echo $index ?> href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['home'] ?></a>
-                                </li>
-                                <li>
-                                    <a <?php echo $about ?> href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['about'] ?></a>
-                                </li>
-                                <li>
-                                    <a <?php echo $services ?> href="<?php echo 'services.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['services'] ?></a>
-                                </li>
-                                <li>
-                                    <a <?php echo $works ?> href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['works'] ?></a>
-                                </li>
-                                <li>
-                                    <a <?php echo $news ?> href="<?php echo 'news.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['news'] ?></a>
-                                </li>
-                                <li>
-                                    <a style="padding-right: 0;" href="?lang=az"><img style="width: 20px;height: 20px;" src="images/azerbaijan.png" alt="az"/></a>
-                                </li>
-                                <li>
-                                    <a style="padding-right: 0;" href="?lang=tr"><img style="width: 20px;height: 20px;" src="images/turkey.png" alt="tr"/></a>
-                                </li>
-                                <li>
-                                    <a style="padding-right: 0;" href="?lang=rus"><img style="width: 20px;height: 20px;" src="images/russia.png" alt="rus"/></a>
-                                </li>
-                                <li>
-                                    <a href="?lang=en"><img style="width: 20px;height: 20px;" src="images/united-kingdom.png" alt="en"/></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="align-self-center ml-auto header-col-right">
-                            <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
-                            <span id="menu-btn"></span>
-                        </div>
-                        <div class="clearfix"></div>
+                        <!-- logo close -->
                     </div>
+                    <div class="align-self-center ml-auto header-col-mid">
+                        <!-- mainmenu begin -->
+                        <ul id="mainmenu">
+                            <li>
+                                <a <?php echo $index ?> href="<?php echo 'index.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['home'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $about ?> href="<?php echo 'about-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['about'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $services ?> href="<?php echo 'services.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['services'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $works ?> href="<?php echo 'works.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['works'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $news ?> href="<?php echo 'news.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['news'] ?></a>
+                            </li>
+                            <li>
+                                <a <?php echo $team ?> href="<?php echo 'our-team.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['team'] ?></a>
+                            </li>
+                            <li>
+                                <?php echo $language1 ?>
+                                <ul id="flags">
+                                    <li>
+                                        <?php echo $language2 ?>
+                                    </li>
+                                    <li>
+                                        <?php echo $language3 ?>
+                                    </li>
+                                    <li>
+                                        <?php echo $language4 ?>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="align-self-center ml-auto header-col-right">
+                        <a style="background: #3E4095;" class="btn-custom" href="<?php echo 'contact-us.php?lang='.$_SESSION['lang'];?>"><?php echo $lang['connection']; ?></a>
+                        <span id="menu-btn"></span>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 <!-- header close -->
