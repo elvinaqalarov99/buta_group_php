@@ -44,7 +44,7 @@
   $lang['index_done'] = "Biz ne yaptık?";
   $lang['index_title'] = "Özet";
   $lang["index_works"] = "Tüm çalışmalarımız";
-  $lang['index_refs'] = "REFERANSLARIMIZ";
+  $lang['index_refs'] = "Referanslarımız";
   $lang['all_refs'] = "Tüm referanslarımız" ;
 
   //about-us

@@ -43,7 +43,7 @@
   $lang['index_done'] = "Nələr etdik ?";
   $lang['index_title'] = "Xülasə";
   $lang["index_works"] = "Bütün işlərimiz";
-  $lang['index_refs'] = "REFERANSLARIMIZ";
+  $lang['index_refs'] = "Referanslarımız";
   $lang['all_refs'] = "Bütün referanslarımız";
 
   //about-us

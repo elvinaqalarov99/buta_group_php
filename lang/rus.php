@@ -44,7 +44,7 @@
   $lang['index_done'] = "Что мы сделали?";
   $lang['index_title'] = "Cводка";
   $lang["index_works"] = "Вся наша работа";
-  $lang['index_refs'] = "НАШИ УПОМИНАНИЯ";
+  $lang['index_refs'] = "Наши упоминания";
   $lang['all_refs'] = "Все наши ссылки";
 
   //about-us

@@ -44,7 +44,7 @@
   $lang['index_done'] = "What have we done?";
   $lang['index_title'] = "In brief";
   $lang["index_works"] = "All our work";
-  $lang['index_refs'] = "OUR REFERENCES";
+  $lang['index_refs'] = "Our references";
   $lang['all_refs'] = "All our references";
 
   //about-us
